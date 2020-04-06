@@ -1,5 +1,4 @@
-'(Prova Utilizzo Operatori, Variabili)
-
+ Sub Main(Prova Utilizzo Operatori, Variabili)
         Dim intero, ese As Int16
         Dim decimale As Single
         Dim vero As Boolean
@@ -16,3 +15,4 @@
         frase = "il valore decimale è: " & decimale
         Console.WriteLine(frase) '= -0,0003705076
         Console.ReadKey()
+    End Sub
