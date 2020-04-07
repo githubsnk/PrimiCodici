@@ -1,5 +1,5 @@
     Sub Main()
-        Dim a, b As Single
+        Dim a, b As Single 
 
         Do
             'Pulisce lo schermo
