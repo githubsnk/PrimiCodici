@@ -1,0 +1,45 @@
+Imports System
+
+Module MomentoTorcente
+    Sub Main()
+
+        Do
+            Dim M As Decimal = Nothing
+            Dim r As Decimal = Nothing
+            Dim F As Decimal = Nothing
+
+            Console.WriteLine("CALCOLO DEL MOMENTO TORCENTE DI UNA FORZA PERPENDICOLARE: M = r * F ")
+            Console.WriteLine(" ")
+            Console.WriteLine("M = Momento Torcente(Nm)")
+            Console.WriteLine("r = Distanza dall'asse di rotazione(mt)")
+            Console.WriteLine("F = Forza(N)")
+            Console.WriteLine(" ")
+            Console.WriteLine("Inserisci i dati richiesti mettendo come valore '0' alla tua incognita")
+            Console.WriteLine(" ")
+            Console.WriteLine("M ")
+            M = Console.ReadLine()
+            Console.WriteLine(" ")
+            Console.WriteLine("r ")
+            r = Console.ReadLine()
+            Console.WriteLine(" ")
+            Console.WriteLine("F ")
+            F = Console.ReadLine()
+            Console.WriteLine(" ")
+
+            If M = Nothing Then
+                M = r * F
+            ElseIf r = Nothing Then
+                r = M / F
+            ElseIf F = Nothing Then
+                F = M / r
+            End If
+
+
+            Console.WriteLine("Momento Torcente " & M & " Lunghezza Leva " & r & " Forza " & F)
+            Console.WriteLine(" ")
+            Console.WriteLine("------------------------------------------------------------------------------------------------")
+            Console.WriteLine(" ")
+        Loop
+
+    End Sub
+End Module
